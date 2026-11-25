@@ -102,7 +102,7 @@ body.overlay-active > main > header.brand{display:none}
   <button type="button" data-tab="overlay" onclick="voidTab('overlay')" aria-pressed="false">
     <span class="nav-icon">▱</span><span>Overlay</span>
   </button>
-  <button type="button" data-tab="download" onclick="location.href='dns.html'" aria-pressed="false">
+  <button type="button" data-tab="download" onclick="voidTab('download')" aria-pressed="false">
     <span class="nav-icon">⇩</span><span>Download</span>
   </button>
 </nav>
@@ -164,7 +164,8 @@ function voidTab(name) {
      // Controle visual demonstrativo; não altera a taxa de disparo do jogo.
    });
 
-  voidTab('painel');
+  var initialTab = window.location.hash === '#download' ? 'download' : 'painel';
+  voidTab(initialTab);
   var share = document.getElementById('share-esp');
   if (share) share.onclick = function () {
     var message = 'VOID BYPASS — Overlay ESP demonstrativo';

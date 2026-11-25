@@ -60,18 +60,11 @@ body.fullscreen .preview{height:55vh}
 <nav aria-label="Navegação principal">
   <button data-tab="Painel" onclick="location.href='dashboard.html'"><span class="ico">⌂</span>Painel</button>
   <button data-tab="Overlay" class="active" id="overlay-tab"><span class="ico">▱</span>Overlay</button>
-  <button data-tab="Download" id="download-tab" onclick="location.href='dns.html'"><span class="ico">⇩</span>Download</button>
+  <button data-tab="Download" id="download-tab" onclick="location.href='dashboard.html#download'"><span class="ico">⇩</span>Download</button>
 </nav>
 <div class="toast" id="toast" role="status"></div>
 <script>
 const toastEl=document.getElementById('toast');
-document.getElementById('overlay-tab').addEventListener('click',()=>{
-  overlayMain.hidden=false;
-  downloadPanel.hidden=true;
-  document.getElementById('overlay-tab').classList.add('active');
-  document.getElementById('download-tab').classList.remove('active');
-});
-
 let toastTimer;
 function toast(msg){toastEl.textContent=msg;toastEl.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.style.display='none',2200)}
 document.querySelectorAll('.switch').forEach(btn=>btn.addEventListener('click',()=>{
