@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>br.void.dns.adblock.profile</string>
+	<key>PayloadUUID</key>
+	<string>66FDAB29-A3DE-4C96-9906-49AFCC9A73B8</string>
+	<key>PayloadDisplayName</key>
+	<string>VOID DNS</string>
+	<key>PayloadDescription</key>
+	<string>DNS criptografado para ajudar a bloquear anúncios e rastreadores no iPhone.</string>
+	<key>PayloadOrganization</key>
+	<string>VOID</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>br.void.dns.adblock.settings</string>
+			<key>PayloadUUID</key>
+			<string>9C9FFC7C-02B1-42C4-9327-546465F6F40F</string>
+			<key>PayloadDisplayName</key>
+			<string>VOID DNS – Bloqueio de anúncios</string>
+			<key>PayloadDescription</key>
+			<string>Configuração de DNS criptografado usando o serviço público AdGuard DNS para ajudar a bloquear anúncios e rastreadores.</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://dns.adguard-dns.com/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
